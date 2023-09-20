@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/logo.svg" alt="Logo Sneakers">
+    </div>
+    <div class="t-nav">
+      <div class="list-menu">Collections</div>
+      <div class="list-menu">Men</div>
+      <div class="list-menu">Women</div>
+      <div class="list-menu">About</div>
+      <div class="list-menu">Contact</div>
+    </div>
+    <div class="right-menu">
+      <div class="r-menu"><img id="img-cart" src="images/icon-cart.svg" alt="Carrinho"></div>
+      <div class="r-menu"><img id="img-perfil" src="images/image-avatar.png" alt=""></div>
+    </div>
+  </nav>
+
+
+  <main>
+
+    <div class="main-left">
+      <div class="principal">
+        <img id="img-principal" src="images/image-product-1.jpg" onclick="full(this)" alt="">
+      </div>
+      <div class="auxiliares">
+        <img src="images/image-product-1-thumbnail.jpg" alt="" class="img-auxiliares 1">
+        <img src="images/image-product-2-thumbnail.jpg" alt="" class="img-auxiliares 2">
+        <img src="images/image-product-3-thumbnail.jpg" alt="" class="img-auxiliares 3">
+        <img src="images/image-product-4-thumbnail.jpg" alt="" class="img-auxiliares 4">
+      </div>
+    </div>
+
+
+    <div class="main-right">
+      <div class="categoria">
+        <p>Sneaker Company</p>
+      </div>
+
+      <div class="titulo">
+        <p> Fall Limited Edition Sneakers
+        </p>
+      </div>
+
+      <div class="descricao">
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      </div>
+
+
+      <div class="price">
+        <p id="price">$125.00</p>
+        <p id="discount">50%</p>
+        <p id="old-price">$250.00</p>
+      </div>
+
+      <div class="alinhamento">
+
+        <div class="qtd">
+          <button type="button" class="button" id="b-left" onclick="diminuir()"><img src="images/icon-minus.svg" alt=""
+              srcset=""></button>
+          <input type="number" name="count" id="amount" value="0" min="0" max="99">
+          <button type="button" class="button" id="b-left" onclick="aumentar()"><img src="images/icon-plus.svg"
+              alt=""></button>
+        </div>
+
+
+        <div id="add-cart" onclick="addCart()">
+          <img id="img-addcart" src="images/icon-cart.svg" alt="">
+          <p>Add to cart</p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </main>
+  <div class="oculto">
+    <div class="visualizacao">
+      <div class="cetas voltar"> <img src="images/icon-previous.svg" alt=""></div>
+      <img class="visualizacao-img" src="images/image-product-1.jpg" alt="">
+      <div class="cetas ir"> <img src="images/icon-next.svg" alt=""></div>
+    </div>
+
+    <div class="visu-auxiliares">
+      <img src="images/image-product-1-thumbnail.jpg" alt="" class="visu-img-auxiliares 1">
+      <img src="images/image-product-2-thumbnail.jpg" alt="" class="visu-img-auxiliares 2">
+      <img src="images/image-product-3-thumbnail.jpg" alt="" class="visu-img-auxiliares 3">
+      <img src="images/image-product-4-thumbnail.jpg" alt="" class="visu-img-auxiliares 4">
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">André Alves</a>.
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
+
+
